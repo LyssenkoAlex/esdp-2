@@ -1,23 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es6",
     "module": "commonjs",
-    "outDir": "dist",
-    "strict": true,
-    "baseUrl": ".",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
     "paths": {
-      "@src/*": [
-        "src/*"
-      ],
-    },
-    "useUnknownInCatchVariables": false
+      "*": ["node_modules/*", "src/types/*"]
+    }
   },
-  "include": [
-    "src/**/*.ts",
-    "spec/**/*.ts",
-    "build.ts"
-  ],
+  "include": ["./src/**/*"]
 }

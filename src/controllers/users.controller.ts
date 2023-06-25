@@ -149,6 +149,7 @@ controller.delete("/logout", async (req, res) => {
       return res.status(200).send({ message: "Logout successfull!" });
     }
 
+    // @ts-ignore
     const dropToken = null;
     const resetToken = await db.query(
       `UPDATE users SET 

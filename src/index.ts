@@ -35,4 +35,8 @@ app.use("/items_subcategory", itemsSubcategoryController);
 app.use("/location", locationController);
 
 
-run().catch(logger.err);
+// run().catch(logger.err);
+
+app.listen(PORT, () => {
+  return console.log(`Server is listening on ${PORT}`)
+})
