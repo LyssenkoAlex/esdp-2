@@ -2,7 +2,7 @@
   "name": "flower-shop-backend",
   "version": "0.0.0",
   "scripts": {
-    "build": "npx ts-node build.ts",
+    "build": "rimraf dist && tsc",
     "lint": "npx eslint --ext .ts src/",
     "lint:tests": "npx eslint --ext .ts spec/",
     "start": "nodemon src/server.ts",
