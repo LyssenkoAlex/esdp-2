@@ -1,7 +1,7 @@
 import express, { Request, Router, Response } from "express";
-import db from "@src/db/db";
-import ItemsSchema, { Items } from "@src/models/item.model";
-import validate from "@src/middlewares/validateRequest";
+import db from "../db/db";
+import ItemsSchema, { Items } from "../models/item.model";
+import validate from "../middlewares/validateRequest";
 import multer from 'multer';
 import path from 'path';
 import {nanoid} from 'nanoid';

@@ -2,27 +2,13 @@
   "name": "flower-shop-backend",
   "version": "0.0.0",
   "scripts": {
+    "start": "nodemon src/index.ts",
     "build": "rimraf dist && tsc",
-    "lint": "npx eslint --ext .ts src/",
-    "lint:tests": "npx eslint --ext .ts spec/",
-    "start": "nodemon src/server.ts",
-    "dev": "nodemon",
-    "test": "nodemon --config ./spec/nodemon.json",
-    "test:no-reloading": "npx ts-node --files -r tsconfig-paths/register ./spec"
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "nodemonConfig": {
-    "watch": [
-      "src"
-    ],
-    "ext": "ts, html",
-    "ignore": [
-      "src/public"
-    ],
-    "exec": "./node_modules/.bin/ts-node --files -r tsconfig-paths/register ./src/server.ts"
-  },
-  "_moduleAliases": {
-    "@src": "dist"
-  },
+
   "engines": {
     "node": ">=8.10.0"
   },

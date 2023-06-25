@@ -1,7 +1,7 @@
 import express, { Request, Router, Response } from "express";
-import db from "@src/db/db";
-import ActionsSchema, { Actions } from "@src/models/actions.models";
-import validate from "@src/middlewares/validateRequest";
+import db from "../db/db";
+import ActionsSchema, { Actions } from "../models/actions.models";
+import validate from "../middlewares/validateRequest";
 
 const controller: Router = express.Router();
 
